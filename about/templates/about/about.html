@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About Us</title>
-</head>
-<body>
-    <h1>{{ about.title }}</h1>
-    <p>{{ about.content }}</p>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<h1>{{ about.title }}</h1>
+<p>{{ about.content }}</p>
+{% endblock %}

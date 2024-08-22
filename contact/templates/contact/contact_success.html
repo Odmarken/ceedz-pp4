@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact Success</title>
-</head>
-<body>
-    <h1>Thank you for your message!</h1>
-    <a href="{% url 'contact' %}">Back to Contact Form</a>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Contact Success{% endblock %}
+
+{% block content %}
+<h1>Thank you for your message!</h1>
+<a href="{% url 'contact' %}">Back to Contact Form</a>
+{% endblock %}
