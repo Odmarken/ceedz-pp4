@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-odmarken-ceedzpp4-gq6aur9th1o.ws-eu115.gitpod.io']
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-odmarken-ceedzpp4-gq6aur9th1o.ws-eu115.gitpod.io']
 
 # Application definition
 
