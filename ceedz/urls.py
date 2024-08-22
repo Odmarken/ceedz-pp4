@@ -7,5 +7,11 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('contact/', include('contact.urls')),
     path('likes/', include('likes.urls')),
+    
+    # Authentication URLs
+    path('accounts/', include('django.contrib.auth.urls')),  
+    path('accounts/', include('accounts.urls')),  
+    
+    # Homepage
     path('', include('blog.urls')),  
 ]
