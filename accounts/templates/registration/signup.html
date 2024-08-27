@@ -1,12 +1,17 @@
 {% extends 'base.html' %}
 
-{% block title %}Register{% endblock %}
+{% block title %}Sign Up{% endblock %}
 
 {% block content %}
-<h2>Register</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Register</button>
-</form>
+<div class="centered-form">
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <p>Welcome back! Do you already have an account? Then please <a href="{% url 'login' %}">sign in</a> instead.</p>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }} <!-- This will include all necessary form fields and validation messages -->
+            <button type="submit" class="btn btn-primary">Sign Up »</button>
+        </form>
+    </div>
+</div>
 {% endblock %}

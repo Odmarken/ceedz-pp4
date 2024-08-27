@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
+from blog import views as blog_views  
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -7,11 +8,6 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('contact/', include('contact.urls')),
     path('likes/', include('likes.urls')),
-    
-    # Authentication URLs
-    path('accounts/', include('django.contrib.auth.urls')),  
-    path('accounts/', include('accounts.urls')),  
-    
-    # Homepage
-    path('', include('blog.urls')),  
+    path('', blog_views.post_list, name='home'),  
+    path('accounts/', include('django.contrib.auth.urls')),  # Includes login, logout, etc.
 ]
