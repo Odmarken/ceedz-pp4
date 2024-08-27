@@ -1,22 +1,15 @@
+/* General Body Styles */
 body {
-    background-color: #3991e9; 
+    background-color: #003135; 
     color: #ecf0f1; 
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #ecf0f1; 
-}
-
-p {
-    color: #bdc3c7; 
-    font-size: 18px;
-}
-
+/* Header Styles */
 nav ul {
-    background-color: #1289ff; 
+    background-color: #0FA4AF; 
     list-style-type: none;
     padding: 10px;
     margin: 0;
@@ -28,7 +21,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ecf0f1; 
+    color: #003135; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -37,13 +30,10 @@ nav ul li a:hover {
     text-decoration: underline; 
 }
 
-.content {
-    padding: 20px;
-}
-
+/* Footer Styles */
 footer {
-    background-color: #34495e;
-    color: #ecf0f1;
+    background-color: #FFFFFF; 
+    color: #003135; 
     text-align: center;
     padding: 15px;
     position: fixed;
@@ -52,8 +42,18 @@ footer {
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Additional CSS for Centering Forms */
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #ecf0f1; 
+}
 
+/* Paragraph Styles */
+p {
+    color: #bdc3c7; 
+    font-size: 18px;
+}
+
+/* Form Content Styling */
 .centered-form {
     display: flex;
     justify-content: center;
@@ -64,7 +64,12 @@ footer {
 .form-container {
     background-color: white; 
     padding: 20px;           
-    border-radius: 8px;     
+    border-radius: 8px;      
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     color: #333; 
+}
+
+/* Main Content Area */
+.content {
+    padding: 20px;
 }
