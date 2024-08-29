@@ -1,8 +1,20 @@
 {% extends 'base.html' %}
 
-{% block title %}About Us{% endblock %}
-
 {% block content %}
-<h1>{{ about.title }}</h1>
-<p>{{ about.content }}</p>
+<div class="about-container">
+    <h1>About Us</h1>
+    <p>Welcome to our gaming blog, your ultimate destination for everything related to the exciting world of gaming! At our blog, we are passionate about bringing you the latest news, in-depth reviews, insightful articles, and engaging discussions on all things gaming. Whether you're a seasoned gamer or a newbie just getting started, we have something for everyone.</p>
+
+    <h2>What We Offer</h2>
+    <p>We cover a wide range of topics including the latest game releases, reviews of popular games, tips and tricks for better gameplay, and industry news. Our team of dedicated gamers and writers work tirelessly to bring you well-researched and engaging content that will keep you informed and entertained.</p>
+
+    <h2>Why Follow Us?</h2>
+    <p>Our blog is not just about games; it's about building a community of like-minded individuals who share a love for gaming. We believe in the power of community and strive to create a platform where gamers can come together, share their experiences, and learn from one another.</p>
+
+    <h2>Contact Us</h2>
+    <p>Have a question, suggestion, or just want to say hi? We’d love to hear from you! You can reach out to us through our <a href="{% url 'contact' %}">contact form</a>. Whether you have a query or just want to share your thoughts, feel free to drop us a message. We are here to help and engage with our readers.</p>
+
+    <h2>Join Our Community</h2>
+    <p>Follow us on social media to stay up-to-date with the latest posts and engage with other gamers. Don’t forget to subscribe to our newsletter to receive exclusive content, news, and updates directly to your inbox. Welcome to the community!</p>
+</div>
 {% endblock %}
