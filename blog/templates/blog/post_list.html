@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
 
-{% block title %}Blog Posts{% endblock %}
-
 {% block content %}
-<h1>Blog Posts</h1>
-{% for post in posts %}
-    <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
-    <p>{{ post.created_at }}</p>
-    <p>{{ post.content|slice:":200" }}...</p>
-{% endfor %}
+    <div class="blog-posts-container">
+        <h1>Blog Posts</h1>
+        <div>
+            {% for post in posts %}
+                <div class="post">
+                    <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                    <p>{{ post.content|truncatewords:30 }}</p>
+                    <p><em>{{ post.published_date }}</em> by {{ post.author }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}

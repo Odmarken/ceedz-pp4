@@ -1,5 +1,5 @@
 body {
-    background-color: #3991e9; 
+    background-color: #161c21; 
     color: #ecf0f1; 
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -7,16 +7,16 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #ecf0f1; 
+    color: #33ff00
 }
 
 p {
-    color: #bdc3c7; 
+    color: #000000; 
     font-size: 18px;
 }
 
 nav ul {
-    background-color: #1289ff; 
+    background-color: #000000; 
     list-style-type: none;
     padding: 10px;
     margin: 0;
@@ -28,7 +28,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ecf0f1; 
+    color: #33ff00; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -42,8 +42,8 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #34495e;
-    color: #ecf0f1;
+    background-color: #000000;
+    color: #33ff00;
     text-align: center;
     padding: 15px;
     position: fixed;
@@ -62,9 +62,26 @@ footer {
 }
 
 .form-container {
-    background-color: white; 
+    background-color: #161c21; 
     padding: 20px;           
     border-radius: 8px;     
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    color: #333; 
+    color: #33ff00; 
 }
+
+/* blog homepage */
+
+.blog-posts-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.post {
+    background-color: #ffffff; 
+    padding: 15px; /
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
