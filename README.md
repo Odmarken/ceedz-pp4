@@ -81,6 +81,11 @@ The main objective of this project is to provide a space for gamers to connect, 
    - Full access to manage posts, users, and other aspects of the platform through Django’s built-in admin interface.
    - Only the superuser can see and access the "Admin" button in the navigation bar.
 
+![Header](readmeimages/editpost.png)
+
+8. **Edit Post**:
+   - Users who are the authors of a post, or who have superuser status, can edit posts directly from the post detail page without needing to access the admin interface.
+
 ![Header](readmeimages/headerreadme.png)
 
 8. **Header Functionality**:
