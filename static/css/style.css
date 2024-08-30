@@ -133,3 +133,26 @@ footer {
     line-height: 1.6;  
     margin-bottom: 15px;  
 }
+
+/* like butoon */
+
+.like-button {
+    background-color: #000000; 
+    color: #ffffff; 
+    border: none; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.like-button:hover {
+    background-color: #ffffff; 
+    color: #0015ff; 
+}
+
+
+.like-button:disabled {
+    background-color: #ffffff; 
+    cursor: not-allowed;
+}

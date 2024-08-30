@@ -1,8 +1,50 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="blog-posts-container">
     <h1>{{ post.title }}</h1>
     <p>{{ post.content }}</p>
     <p><em>{{ post.published_date }}</em> by {{ post.author }}</p>
-    <a href="{% url 'post_edit' pk=post.pk %}">Edit</a>
+    
+    <!-- Like button section -->
+    {% if user.is_authenticated %}
+    <div class="like-container">
+        <p>Likes: <span id="like-count-{{ post.id }}">{{ post.likes.count }}</span></p>
+        <button id="like-button-{{ post.id }}" class="like-button" data-post-id="{{ post.id }}"
+            onclick="likePost({{ post.id }})">
+            <i class="fa {% if liked %}fa-thumbs-down{% else %}fa-thumbs-up{% endif %}"></i>
+        </button>
+    </div>
+    {% else %}
+    <p><a href="{% url 'login' %}">Log in</a> to like this post.</p>
+    {% endif %}
+    
+</div>
+
+<script>
+    function likePost(postId) {
+        const likeButtonElement = document.getElementById(`like-button-${postId}`);
+        const likeCountElement = document.getElementById(`like-count-${postId}`);
+
+        fetch(`/likes/like/${postId}/`, {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}',  
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ post_id: postId })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Update like count
+                likeCountElement.textContent = data.likes_count;
+
+                // Update button icon based on like status
+                likeButtonElement.innerHTML = `<i class="fa ${data.liked ? 'fa-thumbs-down' : 'fa-thumbs-up'}"></i>`;
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+</script>
 {% endblock %}
