@@ -92,11 +92,11 @@ The main objective of this project is to provide a space for gamers to connect, 
 
 The Ceedz Blog uses a dark-themed color scheme to provide a sleek, modern look and to reduce eye strain for users who might be reading for extended periods:
 
-- **Background**: Black (#000000) for the main layout to create a strong contrast with the text.
-- **Content Background**: Dark grey (#161c21) for content sections to distinguish them from the overall background.
+- **Background**: Black (#161c21) for the main layout to create a strong contrast with the text.
+- **Content Background**: Dark grey (#000000) for content sections to distinguish them from the overall background.
 - **Text**: White (#ffffff) for the main text, providing high readability against the dark background.
 - **Buttons and Links**: White text with hover effects, maintaining consistency with the overall design.
-- **Footer and Navigation Bar**: Dark grey (#161c21) with white text, ensuring the footer and navigation bar are clearly visible but not overpowering.
+- **Footer and Navigation Bar**: Dark grey (#000000) with white text, ensuring the footer and navigation bar are clearly visible but not overpowering.
 
 ## Technologies Used
 
