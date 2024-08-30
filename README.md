@@ -1,6 +1,7 @@
 [**Live site**](https://ceedz-73062e125056.herokuapp.com/)
 
 # **Ceedz**
+![Homepage](readmeimages/blogreadme.png)
 
 ## Table of Contents
 
@@ -65,6 +66,8 @@ The main objective of this project is to provide a space for gamers to connect, 
    - Registered users can like or unlike posts.
    - The like button updates dynamically without needing a page refresh.
 
+   ![Like](readmeimages/likereadme.png)
+
 4. **Media Handling with Cloudinary**:
    - Cloudinary is used to handle media uploads, providing efficient storage and delivery of images.
 
@@ -77,6 +80,8 @@ The main objective of this project is to provide a space for gamers to connect, 
 7. **Admin Panel**:
    - Full access to manage posts, users, and other aspects of the platform through Django’s built-in admin interface.
    - Only the superuser can see and access the "Admin" button in the navigation bar.
+
+![Header](readmeimages/headerreadme.png)
 
 8. **Header Functionality**:
    - The header includes the navigation menu and a logo that serves as the home button, streamlining navigation.
@@ -136,6 +141,21 @@ The project is deployed on Heroku with the following steps:
    - Run the `heroku run python manage.py migrate` command to apply database migrations.
    - Run `heroku run python manage.py createsuperuser` to create an admin user.
    - Deploy the app and ensure all settings are correctly configured for production.
+
+## Code Validation
+
+### CSS
+![css](readmeimages/csstest.png)
+### HTML
+![HTML](readmeimages/htmltest.png)
+### Python
+![Python](readmeimages/pythontest.png)
+### Lighthouse
+![css](readmeimages/lighthousetest.png)
+
+## Known Issues
+
+- **Lack of Agile Project Management Tracking**: Unfortunately, I did not keep a consistent record of Agile project management practices throughout the development of this project. This oversight may limit the visibility of the project's workflow and task management history. Moving forward, I plan to better document and manage my workflow using Agile methodologies to ensure better project tracking and team collaboration.
 
 ## Credits
 
