@@ -2,67 +2,83 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the body takes the full height of the viewport */
+    min-height: 100vh; 
     margin: 0;
     padding: 0;
     background-color: #161c21; 
-    color: #33ff00; /* Changed text color to green */
+    color: #ffffff; 
     font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Header image */
+.header-image {
+    height: 40px;  
+    vertical-align: middle;  
 }
 
 /* Navigation */
 nav ul {
-    background-color: #000000;  /* Black background for navigation */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    background-color: #000000;  
     list-style-type: none;
     padding: 10px;
     margin: 0;
 }
 
+/* Centered logo in the navbar */
+nav ul .logo {
+    flex-grow: 1; /* Allow logo space to expand */
+    display: flex;
+    justify-content: center; /* Center logo */
+}
+
+/* Navigation links */
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #33ff00;  /* Green text for navigation links */
+    color: #ffffff;  
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease, background-color 0.3s ease;  /* Smooth transition */
+    transition: color 0.3s ease, background-color 0.3s ease;  
 }
 
 nav ul li a:hover {
-    text-decoration: none;  /* No underline on hover */
-    color: #161c21;  /* Change text color to match background */
-    background-color: #33ff00;  /* Green background for the link */
-    padding: 5px 10px;  /* Add some padding to the link on hover */
-    border-radius: 5px;  /* Rounded corners for the background */
+    text-decoration: none;  
+    color: #161c21;  
+    background-color: #ffffff;  
+    padding: 5px 10px;  
+    border-radius: 5px;  
 }
 
 /* Main Content Wrapper */
 .content {
-    flex: 1; /* Allows the content area to expand and fill the remaining space */
+    flex: 1; 
     padding: 20px;
 }
 
 /* Headers and Paragraphs */
 h1, h2, h3, h4, h5, h6 {
-    color: #33ff00; /* Green color for headers */
+    color: #ffffff; 
 }
 
 p {
-    color: #33ff00; /* Changed text color to green */
+    color: #ffffff; 
     font-size: 18px;
 }
 
 /* Footer */
 footer {
     background-color: #000000;
-    color: #33ff00; /* Changed text color to green */
+    color: #ffffff; 
     text-align: center;
     padding: 15px;
     width: 100%;
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
-    margin-top: auto; /* Push the footer to the bottom when there's little content */
+    margin-top: auto; 
 }
 
 /* Additional CSS for Centering Forms */
@@ -74,11 +90,11 @@ footer {
 }
 
 .form-container {
-    background-color: #000000; /* Changed window color to black */
+    background-color: #000000; 
     padding: 20px;           
     border-radius: 8px;     
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    color: #33ff00; 
+    color: #ffffff; 
 }
 
 /* Blog homepage */
@@ -89,7 +105,7 @@ footer {
 }
 
 .post {
-    background-color: #000000; /* Changed window color to black */
+    background-color: #000000; 
     padding: 15px; 
     margin-bottom: 20px; 
     border-radius: 8px; 
@@ -101,15 +117,15 @@ footer {
     max-width: 800px;
     margin: 40px auto; 
     padding: 20px;
-    background-color: #000000; /* Changed window color to black */
-    color: #33ff00; /* Changed text color to green */
+    background-color: #000000; 
+    color: #ffffff; 
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .about-container h1,
 .about-container h2 {
-    color: #33ff00;  
+    color: #ffffff;  
     margin-top: 20px;  
 }
 

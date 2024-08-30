@@ -1,8 +1,19 @@
+{% load static %}
+
 <nav>
     <ul>
+        <!-- Logo inside the navbar -->
+        <li>
+            <a href="{% url 'post_list' %}">
+                <img src="{% static 'images/ceedzheader.png' %}" alt="Ceedz Header" class="header-image" style="height: 40px; vertical-align: middle;">
+            </a>
+        </li>
+
+        <!-- Navigation links -->
         <li><a href="{% url 'post_list' %}">Home</a></li>
         <li><a href="{% url 'about' %}">About</a></li>
         <li><a href="{% url 'contact' %}">Contact</a></li>
+
         {% if user.is_authenticated %}
             {% if user.is_superuser %}
                 <li><a href="{% url 'admin:index' %}">Admin</a></li>
