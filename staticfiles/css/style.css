@@ -81,29 +81,6 @@ footer {
     margin-top: auto; 
 }
 
-#social-networks {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0;
-    display: flex;
-    justify-content: center;
-}
-
-#social-networks li {
-    margin: 0 10px;
-}
-
-#social-networks li a {
-    color: #ffffff;
-    font-size: 24px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-#social-networks li a:hover {
-    color: #ffffff; 
-}
-
 /* Additional CSS for Centering Forms */
 .centered-form {
     display: flex;
