@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 <div class="blog-posts-container">
@@ -7,8 +8,19 @@
         {% for post in posts %}
             <div class="post">
                 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                
+                
+                {% if post.image %}
+                    <div class="post-image">
+                        <img src="{{ post.image.url }}" alt="{{ post.title }}" style="max-width:100%; height:auto;">
+                    </div>
+                {% endif %}
+                
                 <p>{{ post.content|truncatewords:30 }}</p>
                 <p><em>{{ post.published_date }}</em> by {{ post.author }}</p>
+                
+                <!-- Like button or other features here -->
+                
             </div>
         {% endfor %}
     </div>

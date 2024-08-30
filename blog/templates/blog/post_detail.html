@@ -1,8 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 <div class="blog-posts-container">
     <h1>{{ post.title }}</h1>
+    
+    
+    {% if post.image %}
+        <div class="post-image">
+            <img src="{{ post.image.url }}" alt="{{ post.title }}" style="max-width:100%; height:auto;">
+        </div>
+    {% endif %}
+    
     <p>{{ post.content }}</p>
     <p><em>{{ post.published_date }}</em> by {{ post.author }}</p>
     
@@ -18,7 +27,6 @@
     {% else %}
     <p><a href="{% url 'login' %}">Log in</a> to like this post.</p>
     {% endif %}
-    
 </div>
 
 <script>
