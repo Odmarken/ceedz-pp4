@@ -1,12 +1,18 @@
 import os
 import dj_database_url
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 from pathlib import Path
+
+if os.path.isfile('env.py'):
+    import env
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-l)o06bm$drto98hvq0+%t7ztpp^igd%(#c#%*$%g!xq%12!21y')
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = [
     '8000-odmarken-ceedzpp4-gq6aur9th1o.ws-eu115.gitpod.io',
@@ -66,17 +72,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'ceedz.wsgi.application'
 
 # Database
-if os.getenv('DATABASE_URL'):
-    DATABASES = {
-        'default': dj_database_url.config(conn_max_age=600)
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+DATABASES = { 
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -110,11 +109,10 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 # Cloudinary settings
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.getenv('dzrtkbrox'),
-    'API_KEY': os.getenv('646498437392622'),
-    'API_SECRET': os.getenv('QpSw23hkgO5wxtgI49Jwpjbgq-Y'),
-}
+CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
+
+
+
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Media files configuration

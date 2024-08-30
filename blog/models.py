@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField  
 
 class Post(models.Model):
     title = models.CharField(max_length=200)
@@ -8,7 +9,7 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    image = models.ImageField(upload_to='post_images/', blank=True, null=True)  
+    image = CloudinaryField('image', blank=True, null=True)  
 
     def publish(self):
         self.published_date = timezone.now()
