@@ -2,6 +2,24 @@
 
 # **Ceedz**
 
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [User Stories](#user-stories)
+   - [Guest Users](#guest-users)
+   - [Registered Users](#registered-users)
+   - [Administrators](#administrators)
+3. [Features](#features)
+   - [Existing Features](#existing-features)
+   - [Features to Implement in the Future](#features-to-implement-in-the-future)
+4. [Color Scheme](#color-scheme)
+5. [Technologies Used](#technologies-used)
+6. [Deployment](#deployment)
+   - [Setting Up the Project Locally](#setting-up-the-project-locally)
+   - [Deploying to GitHub](#deploying-to-github)
+   - [Deploying to Heroku](#deploying-to-heroku)
+7. [Credits](#credits)
+
 ## Project Overview
 
 Welcome to the Ceedz Blog, a vibrant and interactive platform dedicated to the world of gaming. Built using the powerful Django framework, this blog serves as a hub where gamers from all walks of life can come together to share their passion for video games. Whether you're a casual player or a hardcore enthusiast, the Ceedz Blog offers a space to engage with content through likes, and explore the latest trends and news in the gaming universe.
@@ -91,7 +109,6 @@ The Ceedz Blog uses a dark-themed color scheme to provide a sleek, modern look a
 7. **JavaScript**: For client-side scripting to handle dynamic interactions.
 8. **Bootstrap**: A front-end framework to build responsive and mobile-first web pages.
 
-
 ## Deployment
 
 The project is deployed on Heroku with the following steps:
@@ -102,14 +119,14 @@ The project is deployed on Heroku with the following steps:
    - Set up environment variables in an `env.py` file or directly in the Heroku environment settings.
    - Migrate the database using Django’s `python manage.py migrate` command.
 
-2. **Deploying to Github**:
-1. Log into GitHub. 
-2. From the list of repositories on the screen.
-3. From the menu items near the top of the page.
-4. Scroll down to the **GitHub Pages** section.
-5. Under **Source** click the drop-down menu labelled **None** and select **Master Branch**
-6. On selecting Master Branch the page is automatically refreshed, the website is now deployed. 
-7. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
+2. **Deploying to GitHub**:
+   1. Log into GitHub. 
+   2. From the list of repositories on the screen.
+   3. From the menu items near the top of the page.
+   4. Scroll down to the **GitHub Pages** section.
+   5. Under **Source** click the drop-down menu labelled **None** and select **Master Branch**.
+   6. On selecting Master Branch the page is automatically refreshed, the website is now deployed. 
+   7. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
 
 3. **Deploying to Heroku**:
    - Create a new Heroku app.
