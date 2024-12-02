@@ -164,7 +164,7 @@ Full Agile user stories have been created for my project to ensure a clear and s
 
 ## Known Issues
 
-- **Lack of Agile Project Management Tracking**: Sometimes, the images on the live site do not load immediately and take a little longer to appear. This issue is being investigated and may be related to the hosting environment or media delivery service.
+- **Image loading**: Sometimes, the images on the live site do not load immediately and take a little longer to appear. This issue is being investigated and may be related to the hosting environment or media delivery service.
 
 ## Credits
 
