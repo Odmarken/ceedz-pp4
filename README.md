@@ -92,6 +92,9 @@ The main objective of this project is to provide a space for gamers to connect, 
    - The header includes the navigation menu and a logo that serves as the home button, streamlining navigation.
    - The home button was removed from the navigation menu to avoid redundancy, as the logo already provides this functionality.
 
+9. **CRUD**:
+   - Equipped with a full CRUD (Create, Read, Update, Delete) system, ensuring comprehensive functionality for managing data. Users can create new entries, view and interact with existing data, update content, and delete items as needed. This robust implementation of CRUD operations provides seamless data management, enhances user experience, and ensures the application is dynamic and fully interactive.
+
 ### Features to Implement in the Future
 
 - **Commenting System**: Allow users to comment on posts to increase interaction and discussion.
