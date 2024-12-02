@@ -158,9 +158,13 @@ The project is deployed on Heroku with the following steps:
 ### Lighthouse
 ![css](readmeimages/lighthousetest.png)
 
+## Agile Stories ## 
+
+Full Agile user stories have been created for my project to ensure a clear and structured approach to development. These stories help define specific tasks, prioritize features, and provide a roadmap for what needs to be implemented. By breaking the project into smaller, manageable pieces, the Agile stories allow for better tracking of progress, efficient collaboration, and adaptability to changes during the development process.
+
 ## Known Issues
 
-- **Lack of Agile Project Management Tracking**: Unfortunately, I did not keep a consistent record of Agile project management practices throughout the development of this project. This oversight may limit the visibility of the project's workflow and task management history. Moving forward, I plan to better document and manage my workflow using Agile methodologies to ensure better project tracking and team collaboration.
+- **Lack of Agile Project Management Tracking**: Sometimes, the images on the live site do not load immediately and take a little longer to appear. This issue is being investigated and may be related to the hosting environment or media delivery service.
 
 ## Credits
 
