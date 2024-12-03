@@ -163,7 +163,7 @@ The project is deployed on Heroku with the following steps:
 
 ## Agile Stories ## 
 
-Full Agile user stories have been created for my project to ensure a clear and structured approach to development. These stories help define specific tasks, prioritize features, and provide a roadmap for what needs to be implemented. By breaking the project into smaller, manageable pieces, the Agile stories allow for better tracking of progress, efficient collaboration, and adaptability to changes during the development process.
+Full Agile user stories have been created for my project to ensure a clear and structured approach to development. These stories help define specific tasks, prioritize features, and provide a roadmap for what needs to be implemented. By breaking the project into smaller, manageable pieces, the Agile stories allow for better tracking of progress, efficient collaboration, and adaptability to changes during the development process. [**Link**](https://github.com/users/Odmarken/projects/3/views/7/)
 
 ## Known Issues
 
