@@ -168,6 +168,7 @@ Full Agile user stories have been created for my project to ensure a clear and s
 ## Known Issues
 
 - **Image loading**: Sometimes, the images on the live site do not load immediately and take a little longer to appear. This issue is being investigated and may be related to the hosting environment or media delivery service.
+- **Portrait mode**: Sometimes, in portrait mode, the C icon does not convert correctly to work well on phones, and a better menu UI design is needed
 
 ## Credits
 
